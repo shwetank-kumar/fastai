@@ -3,6 +3,17 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#lessons and data
+deeplearning1/
+deeplearning2/
+setup/
+data/
+.travis.yml
+LICENSE.text
+README.md
+requirements.txt
+
+
 # C extensions
 *.so
 
