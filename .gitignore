@@ -9,7 +9,7 @@ deeplearning2/
 setup/
 data/
 .travis.yml
-LICENSE.text
+LICENSE.txt
 README.md
 requirements.txt
 
