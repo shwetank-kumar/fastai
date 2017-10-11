@@ -12,6 +12,7 @@ data/
 LICENSE.txt
 README.md
 requirements.txt
+.DS_Store
 
 
 
