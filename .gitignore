@@ -6,7 +6,7 @@ __pycache__/
 #lessons and data
 deeplearning1/
 deeplearning2/
-setup/
+#setup/
 data/
 .travis.yml
 LICENSE.txt
@@ -113,3 +113,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Docker share
+.local

@@ -1,0 +1,20 @@
+# Connect to your instance:
+ssh -i /Users/shwetank/.ssh/aws-key-fast-ai.pem ubuntu@ec2-34-212-247-93.us-west-2.compute.amazonaws.com
+# Stop your instance: :
+aws ec2 stop-instances --instance-ids i-007975d6b77628dc4
+# Start your instance:
+aws ec2 start-instances --instance-ids i-007975d6b77628dc4
+# Reboot your instance:
+aws ec2 reboot-instances --instance-ids i-007975d6b77628dc4
+export instanceId=i-007975d6b77628dc4
+export subnetId=subnet-559bc00e
+export securityGroupId=sg-54af3929
+export instanceUrl=ec2-34-212-247-93.us-west-2.compute.amazonaws.com
+export routeTableId=rtb-b719a6ce
+export name=fast-ai
+export vpcId=vpc-d97937bf
+export internetGatewayId=igw-c22a0fa5
+export subnetId=subnet-559bc00e
+export allocAddr=eipalloc-cb44caf6
+export assocId=eipassoc-8c31fab3
+export routeTableAssoc=rtbassoc-4add8132
