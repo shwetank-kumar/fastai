@@ -7,6 +7,7 @@ __pycache__/
 deeplearning1/
 deeplearning2/
 #setup/
+data/*.zip
 data/
 .travis.yml
 LICENSE.txt
