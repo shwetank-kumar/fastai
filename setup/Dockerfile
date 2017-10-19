@@ -135,7 +135,7 @@ RUN pip2 --no-cache-dir install --upgrade pip && \
         seaborn \
 		six \
 		sphinx \
-        tensorflow \
+        tensorflow-gpu \
 		wheel \
 		zmq \
     git+git://github.com/fchollet/keras.git@${KERAS_VERSION} \
