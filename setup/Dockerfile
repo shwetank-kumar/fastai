@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
 		nano \
 		pkg-config \
 		python-dev \
-        screen \
+    screen \
 		software-properties-common \
 		unzip \
 		vim \
