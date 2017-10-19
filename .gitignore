@@ -118,3 +118,6 @@ ENV/
 
 # Docker share
 .local
+
+# Bash
+.bash_history
