@@ -13,7 +13,7 @@ build:
 	docker build -f setup/Dockerfile -t dl_image $(SRC)/setup
 
 run: build
-	docker run -it -p 8080:8080 -p 6006:6006 --name dl -v $(SRC):/root dl_image bash
+	docker run -it -p 8888:8888 -p 6006:6006 --name dl -v $(SRC):/root dl_image #bash
 
 ssh:
 	docker exec -it dl /bin/bash

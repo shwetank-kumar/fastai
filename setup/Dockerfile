@@ -154,4 +154,6 @@ COPY run_jupyter.sh /root/
 # Expose Ports for TensorBoard (6006), Ipython (8888)
 EXPOSE 6006 8888
 
-#CMD ["/bin/echo $GOOGLE_APPLICATION_JSON > google_credentials.json"]
+CMD ["jupyter", "notebook", "--no-browser", "--allow-root", "--ip=0.0.0.0"]
+
+# Run using localhost:8888/?token=<token>

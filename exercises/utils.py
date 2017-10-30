@@ -1,8 +1,8 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-def plot_batch(batch, labels, classes):
-    batch = batch.astype(np.uint8)
+def plot_batch(batch, labels, classes=[0,1]):
+    # batch = batch.astype(np.uint8)
     f = plt.figure(figsize=(12,6))
     sp = []
     n_c = 8
