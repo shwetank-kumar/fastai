@@ -41,6 +41,7 @@ wheels/
 *.egg
 .ipython
 .jupyter
+.remote-sync.json
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
