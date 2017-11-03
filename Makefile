@@ -1,5 +1,5 @@
-help:
-	@cat Makefile
+#help:
+#	@cat Makefile
 
 DATA?="${HOME}/Data"
 DOCKER_FILE_CPU=setup/Dockerfile.cpu
