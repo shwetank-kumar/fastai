@@ -1,3 +1,4 @@
+
 ARG cuda_version=8.0
 ARG cudnn_version=6
 FROM nvidia/cuda:${cuda_version}-cudnn${cudnn_version}-devel
