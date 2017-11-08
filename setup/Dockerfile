@@ -38,6 +38,7 @@ RUN conda install -y python=${python_version} && \
     pip install sklearn_pandas && \
     pip install keras==2.0.8 && \
     conda clean -yt
+    # git clone git://github.com/fchollet/keras.git /src && pip install -e /src[tests] && \
 
 ADD theanorc /home/keras/.theanorc
 
