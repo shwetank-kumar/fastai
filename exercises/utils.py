@@ -21,7 +21,7 @@ def plot_batch(batch, labels, classes=[0,1]):
                 fontsize=12)
 
 def plot_file_list(img_file_list):
-    f = plt.figure(figsize=(18,6))
+    f = plt.figure(figsize=(12,6))
     sp=[]
     n_c = 8
     n_r = len(img_file_list)//n_c+1
