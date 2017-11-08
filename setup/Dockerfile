@@ -36,13 +36,16 @@ RUN conda install -y python=${python_version} && \
     conda install Pillow scikit-learn notebook pandas matplotlib mkl nose pyyaml six h5py && \
     conda install theano pygpu bcolz && \
     pip install sklearn_pandas && \
-    git clone git://github.com/fchollet/keras.git /src && pip install -e /src[tests] && \
-    pip install git+git://github.com/fchollet/keras.git && \
+    pip install keras==2.0.8 && \
     conda clean -yt
 
 ADD theanorc /home/keras/.theanorc
 
 ENV PYTHONPATH='/src/:$PYTHONPATH'
+
+# Set up notebook config
+RUN mkdir ~/.jupyter/ 
+ADD jupyter_notebook_config.py /home/keras/.jupyter/jupyter_notebook_config.py
 
 WORKDIR /src
 
