@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten, Input
+from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 
 def plot_batch(batch, labels, classes):
@@ -84,10 +84,10 @@ class Vgg16BN():
         model.add(MaxPooling2D())
         model.add(Flatten())
         model.add(BatchNormalization())
-        model.add(Dense(4096, activation='relu'))
+        model.add(Dense(512, activation='relu'))
         model.add(BatchNormalization())
         model.add(Dropout(0.5))
-        model.add(Dense(4096, activation='relu'))
+        model.add(Dense(512, activation='relu'))
         model.add(BatchNormalization())
         model.add(Dropout(0.5))
         model.add(Dense(10, activation='softmax'))

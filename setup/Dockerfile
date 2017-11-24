@@ -32,20 +32,22 @@ ARG python_version=3.5
 RUN conda install -y python=${python_version} && \
     pip install --upgrade pip && \
     pip install tensorflow-gpu && \
-    pip install https://cntk.ai/PythonWheel/GPU/cntk-2.1-cp35-cp35m-linux_x86_64.whl && \
     conda install Pillow scikit-learn notebook pandas matplotlib mkl nose pyyaml six h5py && \
     conda install theano pygpu bcolz && \
     pip install sklearn_pandas && \
-    pip install keras==2.0.8 && \
+    pip install keras==2.1.1 && \
     conda clean -yt
     # git clone git://github.com/fchollet/keras.git /src && pip install -e /src[tests] && \
+    # pip install https://cntk.ai/PythonWheel/GPU/cntk-2.1-cp35-cp35m-linux_x86_64.whl && 
+
 
 ADD theanorc /home/keras/.theanorc
+# ADD keras.json /home/keras/.keras/keras.json
 
 ENV PYTHONPATH='/src/:$PYTHONPATH'
 
 # Set up notebook config
-RUN mkdir ~/.jupyter/ 
+RUN mkdir ~/.jupyter/
 ADD jupyter_notebook_config.py /home/keras/.jupyter/jupyter_notebook_config.py
 
 WORKDIR /src
